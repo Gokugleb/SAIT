@@ -1,0 +1,46 @@
+header{
+    max-height: 150px;
+    margin:0%;
+    padding:0%;
+
+}
+
+
+body{
+    background-color: #F5F5F5;
+}
+
+.buttons a{
+    display: inline-block;
+    text-decoration: none;
+    color:#000000;
+}
+.buttons a:hover{
+color:#1cced4;
+text-decoration: underline;
+}
+header{
+    text-align: center;
+}
+
+
+.mark {
+    width: 50px; /* Размер мяча */
+    height: 50px; /* Размер мяча */
+    background-color: #000000; /* Цвет мяча */
+    border-radius: 50%; /* Округлые края для создания формы мяча */
+    position: absolute;
+    /* animation: bounce 1s infinite; */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Начальное положение */
+    }
+    40% {
+        transform: translateY(-150px); /* Подъем мяча */
+    }
+    60% {
+        transform: translateY(-75px); /* Полу-подъем мяча */
+    }
+}
